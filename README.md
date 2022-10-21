@@ -1,1 +1,1 @@
-# shared-resources
+Public nostos-genomics repository.
