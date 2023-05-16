@@ -1,11 +1,11 @@
 {
   "dev": {
-    "active": true,
+    "active": false,
     "activeBetween": {
       "from": null,
       "to": null
     },
-    "message": null
+    "message": "🚀 We are releasing a new version of AION on 12 May 2023. Please be advised that there will be scheduled downtime for a short time."
   },
   "staging": {
     "active": false,
