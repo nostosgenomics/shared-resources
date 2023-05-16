@@ -1,6 +1,6 @@
 {
   "dev": {
-      "active": false,
+      "active": true,
       "activeBetween": {
         "from": null,
         "to": null
