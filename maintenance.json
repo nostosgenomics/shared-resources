@@ -5,7 +5,9 @@
       "from": null,
       "to": null
     },
-    "message": null
+    "message": null,
+    "messageFromDate": "2023-05-12T12:13:09Z",
+    "messageToDate": "2023-05-18T12:13:09Z",
   },
   "staging": {
     "active": false,
