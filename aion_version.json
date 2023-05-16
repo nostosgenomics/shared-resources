@@ -1,13 +1,13 @@
 {
-"current_version": "3.3.0.2",
-"maintenance": {
-"dev": {
-"active": false,
-"activeBetween": {
-"from": null,
-"to": null
-},
-"message": null
-}
-}
+  "current_version": "3.3.0.2",
+  "maintenance": {
+    "dev": {
+      "active": false,
+      "activeBetween": {
+        "from": null,
+        "to": null
+      },
+      "message": null
+    }
+  }
 }
