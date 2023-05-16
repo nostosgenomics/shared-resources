@@ -1,10 +1,26 @@
 {
   "dev": {
-      "active": true,
-      "activeBetween": {
-        "from": null,
-        "to": null
-      },
-      "message": null
-    }
+    "active": true,
+    "activeBetween": {
+      "from": null,
+      "to": null
+    },
+    "message": null
+  },
+  "staging": {
+    "active": true,
+    "activeBetween": {
+      "from": null,
+      "to": null
+    },
+    "message": null
+  },
+  "prod": {
+    "active": false,
+    "activeBetween": {
+      "from": null,
+      "to": null
+    },
+    "message": null
+  }
 }
