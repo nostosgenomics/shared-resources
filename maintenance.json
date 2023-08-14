@@ -20,7 +20,7 @@
     "messageToDate": "2023-08-14T09:00:09Z"
   },
   "prod": {
-    "active": false,
+    "active": true,
     "activeBetween": {
       "from": null,
       "to": null
