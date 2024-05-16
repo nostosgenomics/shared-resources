@@ -15,7 +15,7 @@
       "from": null,
       "to": null
     },
-    "message": "🚀 We are releasing a new version of AION on 4 September 2023. Please be advised that there will be scheduled downtime between 9-10am CET",
+    "message": "🚀 We are releasing a new version of AION on 4 September 2023. Please be advised that there will be scheduled downtime between 9-10am CEST",
     "messageFromDate": "2023-09-01T08:13:09Z",
     "messageToDate": "2023-09-04T09:00:09Z"
   },
@@ -25,6 +25,6 @@
       "from": null,
       "to": null
     },
-    "message": null
+    "message": "🚀 We are releasing a new version of AION on 16 May 2024. Please be advised that there will be scheduled downtime between 9-10pm CEST"
   }
 }
