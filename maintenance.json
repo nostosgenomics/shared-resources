@@ -1,9 +1,7 @@
 {
-  "dev":
-  {
+  "dev": {
     "active": false,
-    "activeBetween":
-    {
+    "activeBetween": {
       "from": null,
       "to": null
     },
@@ -11,11 +9,9 @@
     "messageFromDate": "2023-05-12T12:13:09Z",
     "messageToDate": "2023-05-31T12:13:09Z"
   },
-  "staging":
-  {
+  "staging": {
     "active": false,
-    "activeBetween":
-    {
+    "activeBetween": {
       "from": null,
       "to": null
     },
@@ -23,11 +19,9 @@
     "messageFromDate": "2023-09-01T08:13:09Z",
     "messageToDate": "2023-09-04T09:00:09Z"
   },
-  "prod":
-  {
+  "prod": {
     "active": false,
-    "activeBetween":
-    {
+    "activeBetween": {
       "from": null,
       "to": null
     },
