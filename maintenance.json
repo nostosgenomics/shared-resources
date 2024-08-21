@@ -6,8 +6,8 @@
       "to": null
     },
     "message": "This is a test",
-    "messageFromDate": "2024-08-19T12:13:09Z",
-    "messageToDate": "2024-08-29T12:13:09Z"
+    "messageFromDate": null,
+    "messageToDate": null
   },
   "staging": {
     "active": false,
