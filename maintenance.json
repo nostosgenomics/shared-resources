@@ -2,8 +2,8 @@
   "dev": {
     "active": true,
     "activeBetween": {
-      "from": null,
-      "to": null
+      "from": "2025-02-25T08:00:00Z",
+      "to": "2025-02-25T11:00:00Z"
     },
     "message": "🚀 We are releasing a new version of AION on 25 February 2025. Please be advised that there will be scheduled downtime between 9-11am CET",,
     "messageFromDate": null,
