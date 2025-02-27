@@ -10,7 +10,7 @@
     "messageToDate": null
   },
   "staging": {
-    "active": false,
+    "active": true,
     "activeBetween": {
       "from": null,
       "to": null
