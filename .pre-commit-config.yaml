@@ -1,0 +1,51 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=10000"]
+      - id: check-ast
+      - id: check-symlinks
+      - id: trailing-whitespace
+        types_or: ["python", "json", "yaml"]
+      - id: check-json
+        exclude: ^.vscode/
+      - id: debug-statements
+      - id: pretty-format-json
+        exclude: ^.vscode/
+        args: ["--autofix", "--no-sort-keys"]
+  - repo: https://github.com/hadialqattan/pycln
+    rev: v2.5.0 # Possible releases: https://github.com/hadialqattan/pycln/releases
+    hooks:
+      - id: pycln
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-print]
+        files: '\.py$'
+        exclude: docs/
+        args:
+          - --select=F403,F406,T003
+          - --max-line-length=120
+  - repo: https://github.com/humitos/mirrors-autoflake
+    rev: v1.3
+    hooks:
+      - id: autoflake
+        files: '\.py$'
+        exclude: '^\..*'
+        args: ["--in-place"]
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
+    hooks:
+      - id: yapf
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy
+        args: ["--non-interactive", "--install-types"]
