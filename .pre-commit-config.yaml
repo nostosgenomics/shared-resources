@@ -13,7 +13,7 @@ repos:
         exclude: ^.vscode/
       - id: debug-statements
       - id: pretty-format-json
-        exclude: ^.vscode/
+        exclude: ^.vscode|^maintenance.json|^sa_maintenance.json
         args: ["--autofix", "--no-sort-keys"]
   - repo: https://github.com/hadialqattan/pycln
     rev: v2.5.0 # Possible releases: https://github.com/hadialqattan/pycln/releases

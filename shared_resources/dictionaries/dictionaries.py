@@ -30,13 +30,9 @@ class ResourcesDictionaries:
     @staticmethod
     def get_fullname(hpo):
         fullname = hpo["name_id"]
-        synonyms = [[
-            w for w in s.split(" ")
-            if w.lower() not in [x.lower() for x in fullname.split(" ")]
-        ] for s in hpo["synonyms"] if s and not s.startswith("HP:")]
-        return (f"{fullname} " +
-                (" ".join(sorted(set(reduce(list.__add__, synonyms))))
-                 if synonyms else "")).lower()
+        synonyms = [[w for w in s.split(" ") if w.lower() not in [x.lower() for x in fullname.split(" ")]] for s in hpo["synonyms"]
+                    if s and not s.startswith("HP:")]
+        return (f"{fullname} " + (" ".join(sorted(set(reduce(list.__add__, synonyms)))) if synonyms else "")).lower()
 
     def _load(self):
         hpo_dict = load_json(HPO_JSON)
