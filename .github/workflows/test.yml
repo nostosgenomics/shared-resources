@@ -1,0 +1,33 @@
+name: Linting and unit tests
+on:
+  # Triggers the workflow on push or pull request events but only for the main/dev branch
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [assigned, opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+jobs:
+
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install pre-commit
+      - name: Lint
+        run: make lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Build and test with Docker
+      run: make test

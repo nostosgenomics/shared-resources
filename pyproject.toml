@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "shared_resources"
+version = "4.0.0"
+description = "shared resources for Nostos Genomics"
+authors = ["Nostos Genomics GmbH"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.2.0"
+pytest-cov = ">=4.0.0"
+pre-commit = ">=3.3.3"
+flake8-pyproject = "^1.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.isort]
+profile = "black"
+line_length = 132
+
+[tool.black]
+target-version = ["py310"]
+line-length = 132
+
+[tool.flake8]
+select = ["F403", "F406", "T003", "E501"]
+max-line-length = 132
+
+[tool.mypy]
+ignore_missing_imports = true
