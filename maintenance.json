@@ -20,13 +20,13 @@
     "messageToDate": "2026-03-11T12:00:00Z"
   },
   "prod": {
-    "active": false,
+    "active": true,
     "activeBetween": {
       "from": null,
       "to": null
     },
-    "message": "🚀 We are releasing a new version of AION on 11 March 2026. Please be advised that there will be scheduled downtime between 9-10am CET",
-    "messageFromDate": "2026-03-09T14:00:00Z",
-    "messageToDate": "2026-03-11T12:00:00Z"
+    "message": null
+    "messageFromDate": null
+    "messageToDate": null
   }
 }
