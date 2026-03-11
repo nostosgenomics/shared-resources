@@ -20,10 +20,10 @@
     "messageToDate": "2026-03-11T12:00:00Z"
   },
   "prod": {
-    "active": true,
+    "active": false,
     "activeBetween": {
-      "from": "2026-03-11T08:00:00Z",
-      "to": "2026-03-11T12:00:00Z"
+      "from": null,
+      "to": null
     },
     "message": null,
     "messageFromDate": null,
